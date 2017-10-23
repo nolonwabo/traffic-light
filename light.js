@@ -1,8 +1,6 @@
 var Light = function(id, color) {
-
   var elem = document.getElementById(id);
   elem.classList.add('light-background');
-
   var lightElem = document.createElement('div');
   lightElem.classList.add('light');
   lightElem.classList.add(color);
