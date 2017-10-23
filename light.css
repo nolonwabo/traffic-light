@@ -1,47 +1,60 @@
-.lightBox {
-    width : 7em;
-    margin : auto;
-    padding : 1em;
+.lightBox
+{
+    width: 7em;
+    margin: auto;
+    padding: 1em;
 }
 
-.lightStand {
+.lightStand
+{
+    width: 7em;
+    margin: auto;
+    padding: 1em;
+
     background-color: black;
-    width : 7em;
-    margin : auto;
-    padding : 1em;
 }
 
-.light-background{
-    background-color: grey;
-    padding: 0.1em;
+.light-background
+{
     width: 6em;
     height: 20em;
-    opacity: 0.5;
+    padding: .1em;
+
+    opacity: .5;
+    background-color: grey;
 }
-.light {
-    width : 5em;
-    height: 5em;
-    border-radius: 50%;
-    opacity: 0.25;
-    margin : 0.5em auto;
+.light
+{
     z-index: 10000;
+
+    width: 5em;
+    height: 5em;
+    margin: .5em auto;
+
+    opacity: .25;
+    border-radius: 50%;
 }
 
-.off {
-    opacity: 0.25;
+.off
+{
+    opacity: .25;
 }
 
-.on {
+.on
+{
     opacity: 1;
 }
 
 /* light colors start */
-.green {
+.green
+{
     background-color: green;
 }
-.red {
+.red
+{
     background-color: red;
 }
-.orange {
+.orange
+{
     background-color: orange;
 }

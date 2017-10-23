@@ -1,5 +1,5 @@
 var Light = function(id, color) {
-  
+
   var elem = document.getElementById(id);
   elem.classList.add('light-background');
 
@@ -15,23 +15,23 @@ var Light = function(id, color) {
     lightElem.classList.remove('on');
   }
   this.blink = function() {
-    setInterval(function(){
+    setInterval(function() {
 
-    greenLight.on();
-    setTimeout(function() {
-      greenLight.off();
-    }, 3000);
-    orangeLight.on();
-    setTimeout(function() {
-      orangeLight.off();
-    }, 3000);
-    redLight.on();
-    setTimeout(function() {
-      redLight.off();
-    }, 3000);
-  },2000)
+      greenLight.on();
+      setTimeout(function() {
+        greenLight.off();
+      }, 3000);
+      orangeLight.on();
+      setTimeout(function() {
+        orangeLight.off();
+      }, 3000);
+      redLight.on();
+      setTimeout(function() {
+        redLight.off();
+      }, 3000);
+    }, 2000)
 
-}
+  }
 }
 
 var greenLight = new Light('light', 'green');
@@ -43,28 +43,28 @@ var goBtn = document.querySelector('.goBtn');
 var warningBtn = document.querySelector('.warningBtn');
 var stopBtn = document.querySelector('.stopBtn');
 
-blinkBtn.addEventListener('click', function(){
+blinkBtn.addEventListener('click', function() {
 
-    greenLight.blink();
-      orangeLight.blink();
-      redLight.blink();
+  greenLight.blink();
+  orangeLight.blink();
+  redLight.blink();
 
 });
 
-goBtn.addEventListener('click', function(){
-    greenLight.on();
-    orangeLight.off();
-    redLight.off();
+goBtn.addEventListener('click', function() {
+  greenLight.on();
+  orangeLight.off();
+  redLight.off();
 });
 
-warningBtn.addEventListener('click', function(){
-    orangeLight.on();
-    greenLight.off();
-    redLight.off();
+warningBtn.addEventListener('click', function() {
+  orangeLight.on();
+  greenLight.off();
+  redLight.off();
 });
 
-stopBtn.addEventListener('click', function(){
-    redLight.on();
-    greenLight.off();
-    orangeLight.off();
+stopBtn.addEventListener('click', function() {
+  redLight.on();
+  greenLight.off();
+  orangeLight.off();
 });
